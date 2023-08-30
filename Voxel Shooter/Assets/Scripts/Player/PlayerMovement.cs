@@ -12,7 +12,6 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody _rB;
     private Vector3 _directionVec;
     private Camera _cam;
-    private GameObject _player;
     private float _mouseX, _mouseY, _keybX, _keybY, _camRotation;
 
     public PlayerStatsSO playerStatsSO => _playerStatsSO;
@@ -21,7 +20,6 @@ public class PlayerMovement : MonoBehaviour
     {
         _rB = GetComponent<Rigidbody>();
         _cam = Camera.main;
-        _player = gameObject;
         _camRotation = 0;
 
         _speed = _playerStatsSO.Speed;

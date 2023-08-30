@@ -3,10 +3,6 @@ using UnityEngine.UI;
 
 public class InputManager : MonoBehaviour
 {   
-    private void Awake() {
-        
-    }
-
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape)) {
