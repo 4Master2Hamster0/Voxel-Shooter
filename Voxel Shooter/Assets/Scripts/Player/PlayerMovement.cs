@@ -5,14 +5,17 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float _speed = 40;
-    [SerializeField] private float _jumpForce = 5;
-    [SerializeField] private float _sensitivity = 100;
+    [SerializeField] private float _speed;
+    [SerializeField] private float _jumpForce;
+    [SerializeField] private float _sensitivity;
+    [SerializeField] private PlayerStatsSO _playerStatsSO;
     private Rigidbody _rB;
     private Vector3 _directionVec;
     private Camera _cam;
     private GameObject _player;
     private float _mouseX, _mouseY, _keybX, _keybY, _camRotation;
+
+    public PlayerStatsSO playerStatsSO => _playerStatsSO;
 
     void Start() 
     {
@@ -20,6 +23,10 @@ public class PlayerMovement : MonoBehaviour
         _cam = Camera.main;
         _player = gameObject;
         _camRotation = 0;
+
+        _speed = _playerStatsSO.Speed;
+        _jumpForce = _playerStatsSO.JumpForce;
+        _sensitivity = _playerStatsSO.Sensitivity;
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -30,8 +37,8 @@ public class PlayerMovement : MonoBehaviour
         _keybX = Input.GetAxis("Horizontal");
         _keybY = Input.GetAxis("Vertical");
 
-        _mouseX = Input.GetAxis("Mouse X") * Time.deltaTime * _sensitivity;   
-        _mouseY = Input.GetAxis("Mouse Y") * Time.deltaTime * _sensitivity; 
+        _mouseX = Input.GetAxis("Mouse X") * Time.deltaTime * _sensitivity;
+        _mouseY = Input.GetAxis("Mouse Y") * Time.deltaTime * _sensitivity;
 
         _directionVec = new Vector3(_keybX, 0, _keybY);
 

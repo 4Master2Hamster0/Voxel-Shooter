@@ -10,8 +10,8 @@ public enum WeaponShootStyle{
     ONE_TAP, PRESS
 }
 
-public enum BookType {
-    BOOK1, BOOK2, BOOK3, BOOK4, BOOK5
+public enum BookChapters {
+    CHAPTER1, CHAPTER2, CHAPTER3, CHAPTER4, CHAPTER5
 }
 
 public enum Difficulty {

@@ -16,11 +16,6 @@ public class Enemy : MonoBehaviour
         _health = _enemySO.GetHealth();
         _damage = _enemySO.GetDamage();
     }
-    
-    void Update()
-    {
-        
-    }
 
     public void DecreaseHealth(float amount) {
         _health -= amount;

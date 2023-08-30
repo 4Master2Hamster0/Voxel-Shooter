@@ -5,7 +5,6 @@ public class Shooting : MonoBehaviour
     [SerializeField] private GameObject _weapon;
     [SerializeField] private Weapon _weaponScript;
     [SerializeField] private WeaponSwitcher _weaponSwitcher;
-    [SerializeField] private GameObject _bullet;
     
     private bool _canShoot;
 
@@ -24,7 +23,7 @@ public class Shooting : MonoBehaviour
     }
 
     private void Init() {
-        _canShoot = true; //TODO: pokud zbraň nestřílí, raději omrknout nejprve tuto proměnou a její podmínku
+        _canShoot = true; 
         _weaponSwitcher = ReferenceManager.Instance.WeaponSwitcher;
         UpdateWeapon();
     }

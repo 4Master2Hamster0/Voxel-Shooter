@@ -12,7 +12,6 @@ public class WeaponSO : ScriptableObject
     [SerializeField] private Vector3 _shootPointPosition;
     [SerializeField] private BulletSO _bulletSO;
 
-    //getters for those private variables
     public WeaponType Type => _type;
     public WeaponShootStyle ShootStyle => _shootStyle;
     public float MinDmg => _minDmg;

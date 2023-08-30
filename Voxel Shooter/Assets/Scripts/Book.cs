@@ -7,7 +7,7 @@ public class Book : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _actionButonText;
     [SerializeField] private BookSO _bookSO;
     [SerializeField] private GameObject _player;
-    [SerializeField] private Button _button;
+    [SerializeField] private Button _informationTab;
     [SerializeField] private float _displayDistance = 8;
     [SerializeField] private float _interactableDistance = 2;
 
@@ -26,7 +26,7 @@ public class Book : MonoBehaviour
         CheckPlayerInteraction();
     }
 
-    //Zobrazí se písmeno E nad knihou, jakmile bude vzdálenost od knihy a hráče menší než _displayDinstance
+    //Zobrazí se písmeno E nad knihou, jakmile bude vzdálenost od knihy a hráče menší menší než _displayDinstance
     private void DisplayWhenPlayerNear() {
 
         if(Distance() > _displayDistance) {
@@ -61,12 +61,12 @@ public class Book : MonoBehaviour
     private void CheckPlayerInteraction() {
         if(Input.GetKeyDown(KeyCode.E) && IsInteractable()) {
             EventManager.OnPlayerInteraction?.Invoke(this);
-            EnableButton();
+            EnableInformationTab();
         }
     }
 
-    //když hráč sebere knihu, tak se čudlík k příslušnému obsahu knihy odemkne
-    private void EnableButton() {
-        _button.interactable = true;
+    //když hráč sebere knihu, tak se informace k příslušnému obsahu knihy odemknou
+    private void EnableInformationTab() {
+        _informationTab.interactable = true;
     }
 }

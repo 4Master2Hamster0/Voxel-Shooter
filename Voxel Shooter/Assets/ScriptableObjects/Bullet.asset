@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bullet: {fileID: 1727314954445132563, guid: 63bc68b030160e648b1c99abde33724d, type: 3}
   _speed: 100000
-  _bonusDmg: 2
+  _minBonusDmg: 6
+  _maxBonusDmg: 10

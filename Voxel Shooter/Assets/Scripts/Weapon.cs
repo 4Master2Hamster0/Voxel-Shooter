@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    [SerializeField] private bool _isIdeling;       //o tento boolean se nemusím starat, animuje si ho každý zbraň
+    [SerializeField] private bool _isIdeling;    
     [SerializeField] private string _clipName;
     [SerializeField] private Animator _animator;
     [SerializeField] private GameObject _shootPoint;
@@ -22,7 +22,7 @@ public class Weapon : MonoBehaviour
     {
         if(_isIdeling && !_animator.GetCurrentAnimatorClipInfo(0)[0].clip.name.Equals(_clipName))
         {
-            _animator.SetTrigger("vystrel");
+            _animator.SetTrigger("shoot"); 
         }
     }
 
