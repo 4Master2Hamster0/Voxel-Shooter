@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     private void OnEnable() {
-        EventManager.OnPlayerInteraction.AddListener(TakeThebook);
+        EventManager.OnPlayerInteraction.AddListener(TakeBook);
     }
 
     private void OnDisable() {
-        EventManager.OnPlayerInteraction.RemoveListener(TakeThebook);
+        EventManager.OnPlayerInteraction.RemoveListener(TakeBook);
     }
 
     void Update()
@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void TakeThebook(Book book) {
+    private void TakeBook(Book book) {
         BookSO bookSO = book.BookSO;
         Destroy(book.gameObject);
     }

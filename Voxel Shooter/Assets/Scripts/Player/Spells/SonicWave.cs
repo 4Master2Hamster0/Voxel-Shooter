@@ -1,11 +1,9 @@
 using UnityEngine;
 using TMPro;
 
+[RequireComponent(typeof(ParticleSystem))]
 public class SonicWave : MonoBehaviour
 {
-    //Postřeh: pokud chci funkční skript navázat na UI, udělám to tak, aby nebyly na sebe závislé. Odpočet bude probíhat v tomto skriptu a skript, který bude tento 
-    //odpočet převádět na viditelnou formu si vezme referenci na hráče, vezme si tento skript a naloží s ním jak jen chce. Separovat logiku a grafiku
-
     [SerializeField] private DifficultyDependentData _diffDependentData;
     [SerializeField] private ParticleSystem _particleSonicWave; 
     [SerializeField] private float _power;
@@ -38,7 +36,7 @@ public class SonicWave : MonoBehaviour
 
     private void CastSonicWave() {
         EventManager.OnSonicWaveCasted?.Invoke(true);
-        //OverlapSphere vytvoří na určitém místě kouli o určitém průměru, okamžitě vrátí všechny kolize, které se s touto koulí střetli (ať už uvnitř ní, povrchu či kraji)
+        //OverlapSphere vytvoří na určitém místě SphereCollider o určitém průměru, okamžitě vrátí všechny kolize, které se s touto koulí střetli (ať už uvnitř ní, povrchu či kraji)
         Collider[] colliders = Physics.OverlapSphere(transform.position, _radius);
 
         foreach(Collider hit in colliders) {

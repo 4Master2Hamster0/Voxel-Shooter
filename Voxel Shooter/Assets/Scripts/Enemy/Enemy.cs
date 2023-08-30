@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
-[RequireComponent(typeof(Movement))]
+[RequireComponent(typeof(EnemyMovement))]
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private Animator _animator;
@@ -42,7 +42,7 @@ public class Enemy : MonoBehaviour
 
     private void CheckHealth() {
         if(_health <= 0) {
-            GetComponent<Movement>().enabled = false;
+            GetComponent<EnemyMovement>().enabled = false;
             _animator.SetTrigger("die");
         }
     }
