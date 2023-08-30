@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81f0a4b964d5dd946a305fd0d73afaa7, type: 3}
+  m_Name: DifficultyDependentData
+  m_EditorClassIdentifier: 
+  _gameDifficultySO: {fileID: 11400000, guid: 37f35d0d496dccd44a5c4e560e0e776a, type: 2}
+  _easyMinSpeed: 3
+  _easyMaxSpeed: 5
+  _medMinSpeed: 6
+  _medMaxSpeed: 8
+  _hardMinSpeed: 9
+  _hardMaxSpeed: 11
+  _easyMinDamage: 5
+  _easyMaxDamage: 10
+  _medMinDamage: 10
+  _medMaxDamage: 15
+  _hardMinDamage: 15
+  _hardMaxDamage: 20
+  _easyMinHealth: 50
+  _easyMaxHealth: 75
+  _medMinHealth: 75
+  _medMaxHealth: 100
+  _hardMinHealth: 125
+  _hardMaxHealth: 150
+  _easyInterval: 5
+  _medInterval: 4
+  _hardInterval: 3
+  _easySWDamage: 20
+  _medSWDamage: 40
+  _hardSWDamage: 60
+  _easySWPower: 20
+  _medSWPower: 30
+  _hardSWPower: 40
+  _easySWRadius: 3
+  _medSWRadius: 5
+  _hardSWRadius: 7
+  _easySWUpForce: 1
+  _medSWUpForce: 2
+  _hardSWUpForce: 3

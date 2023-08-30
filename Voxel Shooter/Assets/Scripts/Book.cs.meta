@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4da1a8988f18a39479f83f1b29db4ba8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _actionButonText: {instanceID: 0}
+  - _bookSo: {fileID: 11400000, guid: d99d3b6c4fc483b44aa389b0cbe5c792, type: 2}
+  - _player: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
