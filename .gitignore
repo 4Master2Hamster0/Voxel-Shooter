@@ -6,7 +6,6 @@
 [Tt]emp/
 [Oo]bj/
 [Bb]uild/
-[Bb]uilds/
 [Ll]ogs/
 [Uu]ser[Ss]ettings/
 
@@ -33,8 +32,6 @@
 ExportedObj/
 .consulo/
 *.csproj
-*.meta
-*.vsconfig
 *.unityproj
 *.sln
 *.suo
