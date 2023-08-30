@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-//kliknutím na podobjekt se vybere rodičovský objekt, ne konkrétní podobjekt
 [SelectionBase]
 public class Player : MonoBehaviour
 {
@@ -21,7 +20,6 @@ public class Player : MonoBehaviour
     }
 
     private void TakeBook(Book book) {
-        BookSO bookSO = book.BookSO;
         Destroy(book.gameObject);
     }
 
