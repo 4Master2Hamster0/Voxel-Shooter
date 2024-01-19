@@ -15,13 +15,13 @@ Vítejte v dokumentaci projektu Voxel-Graphic-Shooter. Projekt je navržen tak, 
 1. Navštivte https://github.com/A-Volhejn/Voxel-Shooter
 2. Navigujte myš na zelené tlačítko ***"code"***
 
-![main_page](https://github.com/A-Volhejn/Voxel-Shooter/assets/117010059/e164c955-a10f-4a65-9106-64172e622308)
+![main_page](https://github.com/A-Volhejn/Voxel-Shooter/assets/117010059/44663157-3300-473c-8eac-b7d1d627c11a)
 
 3. Stáhněte **ZIP**
 
 ![download_image](https://github.com/A-Volhejn/Voxel-Shooter/assets/117010059/079c2c46-36d0-4e14-890f-b65558799737)
 
-4. Postupujte dle návodu v **README** souboru 
+4. Extrahujte soubor a spusťe exe soubor VoxelShooter/Build/Voxel-Shooter.exe
 
 Pokud chcete projekt dále upravovat, je nutné projket **naklonovat** na váš lokální počítač. Proveďte následující kroky:
 
